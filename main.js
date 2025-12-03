@@ -26,7 +26,7 @@ const FEEDER_PASS = 'South-Sudan-1993';
 const EMAIL = 'nj2qkir95a@sute.jp';
 const EMAIL_PASS = 'MBpjHcX8';
 const CHECK_INTERVAL = 10000; // 10秒ごと
-const DISCORD_TOKEN = "MTQzOTE4MzgxNTExNjQ2MDA3NA.GmZDyD.r1jfDRgBr3CgMQ6UE0hQS2ktNIeLNrRGG3dK20";
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 const CHANNEL_ID = '1439147927896461432';
 
 if (!DISCORD_TOKEN) {
@@ -331,4 +331,5 @@ async function runLoop() {
         }
     }
 }
+
 runLoop();
